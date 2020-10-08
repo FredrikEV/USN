@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="no">
+    <head>
+        <title>Registrer klasse</title>
+        <meta charset="utf-8">
+    </head>
+        <body>
+            <h3>Registrer din klasse her</h3>
+
+            <form method="POST" action="registrer-klasse.php" id="registrer-klasse" name="registrer-klasse">
+                
+                <label for="klassekode">Skriv inn klasssekode</label><br/>
+                <input type="text" name="klassekode" id="klassekode" size="40" required><br/>
+
+                <label for="klassenavn">Skriv inn klassenavn</label><br/>
+                <input type="text" name="klassenavn" id="klassenavn" size="40" required><br/>
+
+                <label for="studiumkode">Skriv inn studiumkode</label><br/>
+                <input type="text" name="studiumkode" id="studiumkode" size="40" required><br/>
+
+                <input type="submit" title="Sender inn skjemaet" value="Fortsett" name="fortsett" id="fortsett">
+                <input type="reset" title="Sletter all informasjon" value="Nullstill" name="nullstill" id="nullstill">
+            </form>
+        </body> 
+</html>
