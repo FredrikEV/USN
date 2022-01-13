@@ -1,0 +1,54 @@
+.hovedgrid {
+  display: grid;
+  grid-template-columns: minmax(150px, 350px) 1fr 1fr;
+  grid-template-rows: auto;
+  grid-template-areas:
+    "header header header"
+    "meny innhold innhold"
+    "footer footer footer";
+  column-gap: 2em;
+  font-family: "Poppins", sans-serif;
+}
+
+.header {
+  grid-area: header;
+  padding-bottom: 1em;
+  padding-top: 2em;
+  background-color: darkgrey;
+  border-radius: 15px 50px 30px 5px;
+}
+
+.meny {
+  grid-area: meny;
+}
+
+.meny a {
+  background-color: #eee;
+  color: black;
+  display: block;
+  padding: 12px;
+  text-decoration: none;
+  font-size: large;
+}
+
+.innhold {
+  grid-area: innhold;
+  font-size: x-large;
+}
+
+footer {
+  grid-area: footer;
+  font-size: large;
+  text-align: left;
+}
+
+@media screen and (max-width: 600px) {
+  .hovedgrid {
+    grid-template-columns: 1fr;
+    grid-template-areas:
+      "header"
+      "meny"
+      "innhold"
+      "footer";
+  }
+}
